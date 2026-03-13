@@ -1,0 +1,190 @@
+.cta-banner {
+    background: linear-gradient(135deg, #CC0000 0%, #8b0000 60%, #660000 100%);
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.cta-eyebrow {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.cta-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 14px;
+}
+
+.cta-sub {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    font-size: 0.88rem;
+    padding: 14px 32px;
+    border-width: 2px;
+}
+
+/* Illustration */
+.cta-illustration {
+    flex-shrink: 0;
+    position: relative;
+    width: 280px;
+    height: 280px;
+}
+
+.cta-girl-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-girl-circle {
+    width: 180px;
+    height: 180px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.cta-emoji-large {
+    font-size: 6rem;
+    position: relative;
+    z-index: 2;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+.cta-floating-card {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 25px;
+    white-space: nowrap;
+}
+
+.cta-card-1 {
+    top: 10px;
+    left: -10px;
+    animation: floatcardA 4s ease-in-out infinite;
+}
+
+.cta-card-2 {
+    bottom: 30px;
+    left: 0;
+    animation: floatcardB 4s ease-in-out infinite 0.5s;
+}
+
+.cta-card-3 {
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    animation: floatcardA 4s ease-in-out infinite 1s;
+}
+
+@keyframes floatcardA {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-4px, -6px);
+    }
+}
+
+@keyframes floatcardB {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(4px, -6px);
+    }
+}
+
+/* Background circles */
+.cta-bg-circles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.cta-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cta-circle-1 {
+    width: 400px;
+    height: 400px;
+    top: -150px;
+    right: -100px;
+}
+
+.cta-circle-2 {
+    width: 250px;
+    height: 250px;
+    bottom: -100px;
+    left: 100px;
+}
+
+@media (max-width: 768px) {
+    .cta-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-illustration {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cta-emoji-large {
+        font-size: 4rem;
+    }
+}

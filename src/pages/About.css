@@ -1,0 +1,373 @@
+.about-page {
+    overflow-x: hidden;
+}
+
+/* 1. Page Hero Banner */
+.about-hero {
+    background: linear-gradient(135deg, #f4f7ff 0%, #ffffff 100%);
+    padding: 160px 0 120px;
+    text-align: center;
+    color: var(--gray-900);
+}
+
+.about-hero .breadcrumb {
+    font-size: 0.85rem;
+    color: var(--gray-500);
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.about-hero .hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.about-hero .hero-subtitle {
+    font-size: 1.15rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* 2. Who We Are - Split Section */
+.split-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: center;
+    margin-top: -60px;
+    background: #fff;
+    padding: 3rem;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+    position: relative;
+    z-index: 10;
+}
+
+.red-tag {
+    color: var(--primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: var(--gray-600);
+}
+
+.image-content .image-wrapper {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.image-content:hover img {
+    transform: scale(1.05);
+}
+
+/* 3. Stats Counter Row */
+.stats-counter-row {
+    background: #fff;
+    padding: 60px 0;
+    border-bottom: 1px solid var(--gray-100);
+}
+
+.stats-row-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 5px;
+    letter-spacing: -1px;
+}
+
+.stat-label {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--gray-600);
+}
+
+/* 4. Our Mission */
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.mission-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: var(--radius-xl);
+    text-align: center;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--gray-100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mission-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-light);
+}
+
+.mission-icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+    background: #eff6ff;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.mission-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color: var(--gray-900);
+    font-weight: 700;
+}
+
+.mission-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--gray-600);
+}
+
+/* 5. Countries Grid */
+.countries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.country-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border: 1px solid var(--gray-100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.country-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-light);
+}
+
+.flag-circle {
+    width: 80px;
+    height: 80px;
+    background: var(--gray-50);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    border: 1px solid var(--gray-100);
+}
+
+.country-card:hover .flag-circle {
+    transform: scale(1.1);
+}
+
+.country-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--gray-900);
+}
+
+.learn-more {
+    color: var(--primary);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition);
+    letter-spacing: 0.5px;
+}
+
+.learn-more .icon-sm {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.learn-more:hover {
+    gap: 12px;
+}
+
+.learn-more:hover .icon-sm {
+    transform: translateX(3px);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: var(--radius-xl);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border: 1px solid var(--gray-100);
+}
+
+.feature-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-5px);
+    border-color: var(--primary-light);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 24px;
+    background: rgba(26, 86, 219, 0.05);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color: var(--gray-900);
+    font-weight: 700;
+}
+
+/* 7. Team CTA */
+.team-cta {
+    background: linear-gradient(135deg, var(--gray-900) 0%, #0a0f18 100%);
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+.team-cta h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.team-cta p {
+    font-size: 1.15rem;
+    max-width: 800px;
+    margin: 0 auto 35px;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.btn-outline-white {
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: var(--transition);
+    letter-spacing: 0.5px;
+}
+
+.btn-outline-white:hover {
+    background: white;
+    color: var(--gray-900);
+    border-color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .split-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image-content {
+        order: -1;
+    }
+
+    .countries-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats-row-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .countries-grid,
+    .features-grid,
+    .stats-row-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .team-cta h2 {
+        font-size: 1.8rem;
+    }
+}

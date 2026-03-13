@@ -1,0 +1,117 @@
+.popular-courses {
+    padding: 60px 0;
+    background: var(--off-white);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.pc-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    text-align: center;
+    border: 1px solid var(--gray-200);
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.pc-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-light);
+}
+
+.pc-icon-wrap {
+    width: 64px;
+    height: 64px;
+    background: var(--primary-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+.pc-card:hover .pc-icon-wrap {
+    background: var(--primary);
+    color: var(--white);
+    transform: scale(1.1);
+}
+
+.pc-label {
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--gray-900);
+    transition: var(--transition);
+}
+
+.pc-card:hover .pc-label {
+    color: var(--primary);
+}
+
+.pc-action {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--gray-500);
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-top: auto;
+    transition: var(--transition);
+}
+
+.pc-arrow {
+    transition: transform 0.3s ease;
+}
+
+.pc-card:hover .pc-action {
+    color: var(--primary);
+}
+
+.pc-card:hover .pc-arrow {
+    transform: translateX(4px);
+}
+
+.courses-action {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .courses-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pc-card {
+        padding: 1.5rem;
+    }
+}

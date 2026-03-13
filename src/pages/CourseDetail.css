@@ -1,0 +1,195 @@
+.course-hero {
+    background: linear-gradient(135deg, var(--primary) 0%, #1a237e 100%);
+    color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.course-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.course-hero .subtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+.content-card,
+.sidebar-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: var(--radius-xl);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--gray-100);
+    transition: var(--transition);
+}
+
+.section-title {
+    color: var(--primary);
+    margin-bottom: 2rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.section-title::before {
+    content: "";
+    width: 6px;
+    height: 30px;
+    background: var(--accent);
+    border-radius: var(--radius-sm);
+    display: inline-block;
+}
+
+/* Branch Grid */
+.branch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.branch-item {
+    background: var(--gray-50);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--gray-200);
+    font-weight: 600;
+    color: var(--gray-700);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: var(--transition);
+}
+
+.branch-item:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    transform: translateY(-3px);
+    background: var(--white);
+    box-shadow: var(--shadow-sm);
+}
+
+.branch-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+}
+
+/* Custom Table Styles */
+.custom-table,
+.college-table {
+    margin-bottom: 0;
+}
+
+.custom-table thead th,
+.college-table thead th {
+    background: var(--primary-light);
+    color: var(--primary);
+    border: none;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.custom-table tbody td,
+.college-table tbody td {
+    padding: 1rem;
+    vertical-align: middle;
+    border-color: var(--gray-100);
+}
+
+.location-badge {
+    background: var(--accent-light);
+    color: var(--primary);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.content-card h3,
+.sidebar-card h3 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    border-left: 4px solid var(--accent);
+    padding-left: 1rem;
+}
+
+.criteria-list {
+    list-style: none;
+    padding: 0;
+}
+
+.criteria-list li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.75rem;
+}
+
+.criteria-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.course-tag {
+    background: var(--primary-light);
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-xl);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.college-list {
+    list-style: none;
+    padding: 0;
+}
+
+.college-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--gray-100);
+    font-weight: 500;
+    color: var(--gray-700);
+}
+
+.college-list li:last-child {
+    border-bottom: none;
+}
+
+.contact-box {
+    background: var(--accent);
+    color: var(--primary);
+}
+
+.contact-box h3 {
+    color: var(--primary);
+    border-left-color: var(--primary);
+}
+
+.contact-box .btn-primary {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--white);
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .course-hero h1 {
+        font-size: 2rem;
+    }
+}
